@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
     const sounds = document.querySelectorAll(".sound");
     const pads = document.querySelectorAll(".pads div");
 
@@ -6,8 +6,8 @@ window.addEventListener('load', () => {
 
     //ForEach utilizies all the sounds in the collection created above
     pads.ForEach((pad, index) => {
-        pad.addEventListener('click', function(){
-            sounds[index.play]
+        pad.addEventListener("click", function(){
+            sounds[index].play();
         });
     });
 });
